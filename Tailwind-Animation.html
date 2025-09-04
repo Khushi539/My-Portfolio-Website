@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stagger Text Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <p class="text-4xl font-bold stagger-text flex space-x-1">
+      <span class="opacity- animate-fadeInUp delay-[100ms]">H</span>
+      <span class="opacity-0 animate-fadeInUp delay-[300ms]">e</span>
+      <span class="opacity-0 animate-fadeInUp delay-[500ms]">l</span>
+      <span class="opacity-0 animate-fadeInUp delay-[700ms]">l</span>
+      <span class="opacity-0 animate-fadeInUp delay-[900ms]">o</span>
+    </p>
+
+    <h1 data-AOS="fade-in-up">dekho dekho</h1>
+    <h1 data-AOS="zoom-in">zoom</h1>
+    <img src="images/image.jpg" data-AOS="flip-left" alt="">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  </body>
+</html>

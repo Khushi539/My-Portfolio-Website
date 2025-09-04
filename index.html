@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white w-full overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800/90 backdrop-blur-s z-50">
+        <div data-AOS="fade-down" class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text">DevPortfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900">
+        <div class="text-center px-6">
+            <h1 class="lg:text-5xl text-4xl md:text-7xl  font-bold mb-6 typewriter">
+                Hello, I'm Khushi
+            </h1>
+            <p class="lg:text-xl text-lg md:text-2xl text-gray-300 mb-8 fade-in-up" style="animation-delay: 0.5s;">
+                A passionate <span class="gradient-text font-semibold">Frontend Developer</span>
+            </p>
+            <div class="text-glow lg:text-lg md:text-xl code-font mb-12" style="animation-delay: 1s;">
+                &lt;Creating digital experiences that matter /&gt;
+            </div>
+            <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 bounce-in"
+              id="btn" data-AOS="slide-up">
+                View My Work
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 letter-spacing-anim">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="">
+                    <img src="images/image.jpg" alt="" 
+                     data-AOS="flip-left" 
+                    class="rounded-lg shadow-4xl h-[400px]" />
+                </div>
+                <div class="" data-AOS="fade-in-up">
+                    <h3 class="text-2xl font-semibold mb-6 gradient-text">Crafting Digital Excellence</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        “I’m a frontend developer focused on creating clean, responsive, and user-friendly websites. With strong skills in HTML, CSS, JavaScript, Tailwind CSS, and basic React, I’m eager to contribute to real-world projects and grow with every challenge.”
+                    </p>
+                    <div class="" data-AOS="fade-down">
+                        <span style="animation-delay: 0.1s;">Clean code</span> • 
+                        <span style="animation-delay: 0.2s;">Creative solutions</span> • 
+                        <span style="animation-delay: 0.3s;">Continuous learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills"
+     class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 rotate-3d">
+                Technical Skills
+            </h2>
+            
+
+            <div  class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Skill Cards -->
+                <div class=" text-center p-3  bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-60"
+                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        JavaScript
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        ES6+, React, Vue
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        Tailwind CSS
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Tailwind css
+                    </p>
+                </div>
+               
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">HTML</h3>
+                    <p class="text-gray-400 text-sm">HTML</p>
+                 </div>
+
+                  <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">CSS</h3>
+                    <p class="text-gray-400 text-sm">CSS</p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        React
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        React
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        git
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        git
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        VS Code
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        VS Code
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        Bitbusket
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Bitbusket
+                    </p>
+                 </div>
+
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        Jira
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Jira
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-60 w-full" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                      Confluence
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Confluence
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img data-AOS="fade-left" class="h-50 w-full mt-10 mb-10" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        Postman
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Postman
+                    </p>
+                 </div>
+
+                 <div class=" text-center p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                    <div class="text-4xl mb-4">
+                        <img class="h-60 w-full" data-AOS="fade-left"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" alt="">
+                    </div>
+                    <h3 class="font-semibold mb-2">
+                        Photoshop
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Photoshop
+                    </p>
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-glow">
+                Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-AOS="slide-up">
+                <!-- Project Cards -->
+                <div class=" bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                    <img id="page" src="images/page-1.png" alt="" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">
+                            Active
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            React,Tailwindcss,Motion Effects,Interactive Animations
+                        </p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-600 px-3 py-1 rounded text-smrounded text-sm hover:bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900"
+                              onclick="window.location.href='https://effortless-dasik-8753ad.netlify.app/'">
+                                Live Demo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                    <img src="images/gallery.png" alt="" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">
+                             MOMENTO-photo gallery app
+                        </h3>
+                        <p class="text-gray-400 mb-4">HTML,Tailwindcss,JavaScript,Motion Effects,Interactive Animations </p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-600 px-3 py-1 rounded text-sm hover:bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900"
+                              onclick="window.location.href='https://famous-banoffee-76b6ed.netlify.app/'">
+                               Live Demo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                    <img src="images/AI.png" alt="" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">AI Business Landing</h3>
+                        <p class="text-gray-400 mb-4">HTML,Tailwindcss,JavaScript</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-600 px-3 py-1 rounded text-sm rounded text-sm hover:bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900"
+                              onclick="window.location.href='https://clinquant-pothos-4e6173.netlify.app/'">
+                                Live Demo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 gradient-text "data-AOS="slide-up">
+                Get in touch
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 font-bold"data-AOS="slide-up">
+                Have a project or a question? <br>
+                I,d love to hear from Your
+            </p>
+            <div class="max-w-md mx-auto">
+                <p class="font-bold gradient-text"data-AOS="slide-up">
+                    Call/WhatsApp
+                </p>
+                <p class="mb-5"data-AOS="slide-up">
+                    +91-8103343124
+                </p>
+
+                <p class="font-bold gradient-text" data-AOS="slide-up">
+                    Primary email
+                </p>
+                <p class="mb-5" data-AOS="slide-up">
+                    khushipawar218@gmail.com
+                </p>
+
+                <p class="font-bold gradient-text"data-AOS="slide-up">
+                    Immediately available for Frontend Developer roles.
+                </p>
+
+                <p class="mb-5"data-AOS="slide-up">
+                    Actively looking for Frontend roles
+                </p>
+
+                <button class="mb-5 rounded-lg p-2 m-2 bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900 hover:bg-none hover:bg-blue-600" 
+                data-AOS="slide-up" 
+                onclick="window.location.href='https://drive.google.com/file/d/1hqy0KWbNMiftfSDPzIhPEdxnhJCZhbyZ/view?usp=sharing'">
+                    Download resume
+                </button>
+
+                <p class="gradient-text font-bold" data-AOS="slide-up">
+                    I usually reply within 24 hours
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 text-center" >
+        <p class="text-gray-400">© 2025 Frontend Developer Portfolio. Built with passion By Khushi pawar.</p>
+    </footer>
+
+    
+    <script>
+        AOS.init()
+    </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
